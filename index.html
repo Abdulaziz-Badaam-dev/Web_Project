@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Streaming Site</title>
+
+  
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e1e2f, #3a3a5c);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      flex: 1;
+    }
+
+    .option-box {
+      background-color: var(--card-bg);
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    .option-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 25px rgba(255, 75, 43, 0.4);
+    }
+
+    .option-box a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: x-large;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    #EndPage {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    .clicked {
+      box-shadow: 0 0 15px rgba(255, 75, 43, 0.6) !important;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Incredible Site</h1>
+    <p>Choose what you want to watch</p>
+  </header>
+
+  <div class="options">
+    <button class="option-box" onclick="window.location.href='Project1Movies.html'">
+      <a href="#">🎬 Movies</a>
+    </button>
+    <button class="option-box" onclick="window.location.href='Project1Series.html'">
+      <a href="#">📺 Series</a>
+    </button>
+  </div>
+
+  <div id="EndPage">
+    © All Rights Served
+  </div>
+
+</body>
+</html>
